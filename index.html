@@ -64,7 +64,7 @@
             /* Adjust this value to move the image up or down */
         }
 
-        .image-container p{
+        .image-container p {
             margin-left: 15px;
             font-weight: bolder;
             font-size: larger;
@@ -106,7 +106,7 @@
         .icon {
             display: flex;
             align-items: center;
-            
+
         }
 
 
@@ -119,9 +119,9 @@
                 display: none;
             }
 
-            .image-container p{
+            /* .image-container p{
                 display: none;
-            }
+            } */
 
             .logo {
                 flex-direction: column;
@@ -131,6 +131,7 @@
             .logo img {
                 margin-top: 20px;
                 width: 150px;
+                margin-left: 40px;
             }
 
             .searchbar input {
@@ -140,16 +141,22 @@
 
             .icon {
                 position: relative;
-                bottom: 165px;
-                left: 125px;
-                
+                bottom: 195px;
+                left: 133px;
             }
 
-           
+            .follower-likes {
+                white-space: nowrap;
+                margin-right: 40px;
+
+            }
+
+
 
             .user-icon,
             .cart-icon {
                 margin-left: 10px;
+                font-size: 25px;
             }
         }
 
@@ -159,7 +166,7 @@
         }
 
         .desktop_navbar {
-            padding: 0px 410px;
+            padding: 10px 410px;
         }
 
         .desktop_navbar ul {
@@ -591,6 +598,7 @@
             display: none;
             cursor: pointer;
             padding: 10px;
+            border-radius: 10px;
             background-color: #f0f0f0;
             position: fixed;
             top: 0;
@@ -677,7 +685,7 @@
     <div class="logo">
         <div class="image-container">
             <img src="image.png" alt="Logo">
-            <p>1K Followers  |  12K Likes</p>
+            <p class="follower-likes">1K Followers | 12K Likes</p>
         </div>
 
 
@@ -692,7 +700,6 @@
             <i class="bi bi-heart-fill cart-icon"></i>
         </div>
     </div>
-    <br>
 
     <div class="desktop_nav">
         <nav class="desktop_navbar">
